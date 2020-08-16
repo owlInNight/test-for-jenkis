@@ -1,0 +1,14 @@
+pipeline{
+    agent any
+    tools {
+        maven 'mvn-3.5.4'
+    }
+
+    stages('Build'){
+        steps{
+            cmd 'mvn clean package '
+
+            cmd 'pringenv'
+        }
+    }
+}

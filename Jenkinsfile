@@ -7,7 +7,6 @@ pipeline{
     stages('Build'){
         steps{
             cmd 'mvn clean package '
-
             cmd 'pringenv'
         }
     }
